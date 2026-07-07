@@ -4,7 +4,7 @@ services:
   app:
     build:
       context: ..
-      dockerfile: .devcontainer/nakami/Dockerfile
+      dockerfile: /nakami/Dockerfile
 
     volumes:
       - ../..:/workspaces:cached
