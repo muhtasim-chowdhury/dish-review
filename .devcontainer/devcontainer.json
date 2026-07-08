@@ -23,6 +23,9 @@
 	// "remoteUser": "root"
 
 	"updateContentCommand": "./setup",
+
+	"postCreateCommand": "cd nakami && python -m venv .venv",
+
 	"remoteEnv": {
 		"PGDATABASE": "postgres",
 		"PGHOST": "localhost",
