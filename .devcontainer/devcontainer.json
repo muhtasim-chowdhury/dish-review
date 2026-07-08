@@ -24,7 +24,7 @@
 
 	"updateContentCommand": "./setup",
 
-	"postCreateCommand": "cd nakami && python -m venv .venv",
+	"postCreateCommand": "cd nakami && python -m venv .venv && pip install -r requirements.txt",
 
 	"remoteEnv": {
 		"PGDATABASE": "postgres",
