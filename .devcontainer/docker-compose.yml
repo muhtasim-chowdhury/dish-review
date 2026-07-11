@@ -23,9 +23,12 @@ services:
       # - postgres-data:/var/lib/postgresql
       - ./init-user-db.sh:/docker-entrypoint-initdb.d/init-user-db.sh
     environment:
+      # for creating initial superuser
       POSTGRES_USER: postgres
       POSTGRES_DB: postgres
       POSTGRES_PASSWORD: postgres
+
+      # for a new user for Django Server Application to use to interact with database
       DJANGOUSER: django
       DJANGODB: mydb
 
