@@ -28,7 +28,8 @@
 
 	"remoteEnv": {
 		// for providing arguments to run psql
-		"PGDATABASE": "postgres",
+		// "PGDATABASE": "postgres",
+		"PGDATABASE": "mydb",
 		"PGHOST": "localhost",
 		"PGPORT": "5432",
 		"PGUSER": "postgres"
